@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isValidContactMessage() {
+      return request.resource.data.name is string
+          && request.resource.data.email is string
+          && request.resource.data.phone is string
+          && request.resource.data.subject is string
+          && request.resource.data.message is string;
+    }
+
+    // Public content collections (Read-only for public, Write for admins)
+    match /company/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /services/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /team/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /clients/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /testimonials/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /hero/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    match /settings/{docId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    // Contact messages (Public can create, only authenticated admins can read/delete)
+    match /contact_messages/{messageId} {
+      allow create: if isValidContactMessage();
+      allow read, update, delete: if isAuthenticated();
+    }
+  }
+}
