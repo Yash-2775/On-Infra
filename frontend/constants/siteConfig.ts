@@ -29,5 +29,6 @@ export const SITE_CONFIG = {
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Contact", href: "/contact" },
+    { label: "Work Gallery", href: "/gallery" },
   ],
 };
