@@ -5,6 +5,13 @@ export interface NavItem {
   href: string;
 }
 
+export interface SubCategoryItem {
+  id: string;
+  name: string;
+  image: string;
+  description?: string;
+}
+
 export interface ServiceItem {
   id: string;
   slug: string;
@@ -15,6 +22,7 @@ export interface ServiceItem {
   image: string;
   features: string[];
   benefits: string[];
+  subCategories?: SubCategoryItem[];
 }
 
 export interface TeamMember {
@@ -160,7 +168,6 @@ export interface SiteSettingsDoc {
   updatedAt?: Timestamp | string;
 }
 
-// Service Response Pattern for strict error handling without 'any'
 export interface ServiceResponse<T> {
   success: boolean;
   data?: T;

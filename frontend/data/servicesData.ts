@@ -10,7 +10,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDescription:
       "We provide premium CCTV surveillance solutions including IP cameras, HD analog cameras, NVR/DVR setups, remote mobile monitoring, and night-vision security systems for commercial, industrial, and residential properties.",
     iconName: "ShieldCheck",
-    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=800&auto=format&fit=crop",
+    image: "/images/services/CCTV/Dome Style Camera.png",
     features: [
       "HD & 4K IP Camera Surveillance",
       "Night Vision & Thermal Detection",
@@ -22,6 +22,80 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Deterrence of unauthorized intrusions",
       "Real-time alerts & mobile playback",
     ],
+    subCategories: [
+      {
+        id: "box-camera",
+        name: "Box Camera",
+        image: "/images/services/CCTV/Box Camera.png",
+        description: "High-resolution traditional box CCTV camera for customized lens configurations.",
+      },
+      {
+        id: "bullet-style-camera",
+        name: "Bullet Style Camera",
+        image: "/images/services/CCTV/Bullet Style Camera.png",
+        description: "Long-range weatherproof bullet camera ideal for perimeter surveillance.",
+      },
+      {
+        id: "dome-style-camera",
+        name: "Dome Style Camera",
+        image: "/images/services/CCTV/Dome Style Camera.png",
+        description: "Discreet indoor/outdoor vandal-resistant dome surveillance camera.",
+      },
+      {
+        id: "hidden-camera",
+        name: "Hidden Camera",
+        image: "/images/services/CCTV/Hidden Camera.png",
+        description: "Covert surveillance camera engineered for covert security monitoring.",
+      },
+      {
+        id: "hidden-covert-camera",
+        name: "Hidden Covert Camera",
+        image: "/images/services/CCTV/Hidden Covert Camera.png",
+        description: "Pinhole lens hidden camera system for discreet evidence recording.",
+      },
+      {
+        id: "infrared-camera",
+        name: "Infrared Camera",
+        image: "/images/services/CCTV/Infrared Camera.png",
+        description: "Night vision infrared camera for 24/7 zero-light surveillance.",
+      },
+      {
+        id: "network-camera",
+        name: "Network Camera",
+        image: "/images/services/CCTV/Network Camera.png",
+        description: "High-bandwidth IP network camera with cloud recording and remote access.",
+      },
+      {
+        id: "outdoor-camera",
+        name: "Outdoor Camera",
+        image: "/images/services/CCTV/Outdoor Camera.png",
+        description: "IP67 weather-rated outdoor surveillance camera for extreme climates.",
+      },
+      {
+        id: "professional-box-camera",
+        name: "Professional Box Camera",
+        image: "/images/services/CCTV/Professional Box Camera.png",
+        description: "Enterprise grade box camera for traffic and industrial plant monitoring.",
+      },
+      {
+        id: "ptz-camera",
+        name: "PTZ Camera",
+        image: "/images/services/CCTV/PTZ Camera.png",
+        description: "Pan-Tilt-Zoom optical zoom camera with 360-degree continuous rotation.",
+      },
+      {
+        id: "p-t-z-camera",
+        name: "P-T-Z Camera (Speed Dome)",
+        image: "/images/services/CCTV/P-T-Z Camera.png",
+        description: "High-speed optical PTZ camera with auto-tracking smart AI.",
+      },
+      {
+        id: "wireless-camera",
+        name: "Wireless Camera",
+        image: "/images/services/CCTV/Wireless Camera.png",
+        description: "Wi-Fi enabled security camera with hassle-free wireless installation.",
+      },
+    ],
   },
   {
     id: "biometric-time-attendance",
@@ -32,7 +106,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDescription:
       "Advanced fingerprint, facial recognition, and RFID card access control systems integrated with automated payroll and workforce management software.",
     iconName: "Users",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
+    image: "/images/services/Bio-Metric Attandance Sys/FA1 Attendance System.png",
     features: [
       "Fingerprint & AI Face Recognition",
       "RFID Card & PIN Access Control",
@@ -44,6 +118,56 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Streamlined workforce management",
       "Restricted unauthorized door access",
     ],
+    subCategories: [
+      {
+        id: "fa1-attendance-system",
+        name: "FA1 Attendance System",
+        image: "/images/services/Bio-Metric Attandance Sys/FA1 Attendance System.png",
+        description: "High-speed facial recognition and fingerprint time attendance terminal.",
+      },
+      {
+        id: "fa2-multi-biometric-face-card",
+        name: "Multi-Biometric Face & Card Identification Terminal FA2",
+        image: "/images/services/Bio-Metric Attandance Sys/Multi-Biometric-Face-and-Card-Identification-Terminal-FA2-.avif",
+        description: "Dual face and RFID card verification access control terminal.",
+      },
+      {
+        id: "zk-3000t-c-biometric-terminal",
+        name: "ZK 3000T-C Biometric Terminal",
+        image: "/images/services/Bio-Metric Attandance Sys/ZK 3000T-C Bio-metric Terminal.png",
+        description: "Enterprise fingerprint & RFID access control terminal with battery backup.",
+      },
+      {
+        id: "zk-gt100-biometric-terminal",
+        name: "ZK GT100 Biometric Terminal",
+        image: "/images/services/Bio-Metric Attandance Sys/ZK GT100 Bio-metric Terminal.png",
+        description: "Compact attendance system with cloud server sync and mobile app logging.",
+      },
+      {
+        id: "zk-gt200-biometric-terminal",
+        name: "ZK GT200 Biometric Terminal",
+        image: "/images/services/Bio-Metric Attandance Sys/ZK GT200 Bio-metric Terminal.png",
+        description: "Advanced TFT screen biometric terminal for high-volume workforce entry.",
+      },
+      {
+        id: "zk-qclear-tc-biometric-terminal",
+        name: "ZK QCLEAR-TC Biometric Terminal",
+        image: "/images/services/Bio-Metric Attandance Sys/ZK QClEAR-TC Bio-metric Terminal.png",
+        description: "High-definition color display biometric attendance terminal.",
+      },
+      {
+        id: "zk-tft500-biometric-terminal",
+        name: "ZK TFT500 Biometric Terminal",
+        image: "/images/services/Bio-Metric Attandance Sys/ZK TFT500 Bio-metric Terminal.png",
+        description: "Multi-factor authentication system with built-in thermal sensor support.",
+      },
+      {
+        id: "zk-tft900-biometric-terminal",
+        name: "ZK TFT900 Biometric Terminal",
+        image: "/images/services/Bio-Metric Attandance Sys/ZK TFT900 Bio-metric Terminal.png",
+        description: "Premium large screen biometric access control & time tracking system.",
+      },
+    ],
   },
   {
     id: "epabx-phone-systems",
@@ -54,7 +178,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDescription:
       "Seamless intra-office and intercom communication solutions featuring analog, digital, and IP-PBX systems for efficient business communication.",
     iconName: "PhoneCall",
-    image: "https://images.unsplash.com/photo-1520923642038-b4259acecbd7?q=80&w=800&auto=format&fit=crop",
+    image: "/images/services/EPABX/EPABX System.jpg",
     features: [
       "IP-PBX & Hybrid Intercom Systems",
       "Multi-Extension Corporate Calling",
@@ -66,6 +190,14 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Enhanced business communication efficiency",
       "Scalable extension capacity for growing firms",
     ],
+    subCategories: [
+      {
+        id: "epabx-systems",
+        name: "EPABX Intercom Systems",
+        image: "/images/services/EPABX/EPABX System.jpg",
+        description: "Turnkey multi-line EPABX and IP intercom exchange systems.",
+      },
+    ],
   },
   {
     id: "video-door-phone",
@@ -76,7 +208,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDescription:
       "High-definition video intercom systems allowing occupants to visually verify visitors before granting door or gate access remotely.",
     iconName: "Box",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800&auto=format&fit=crop",
+    image: "/images/services/Video-Door/CP Plus VDP Colour Video Door Camera.png",
     features: [
       "HD Touchscreen Indoor Monitors",
       "Vandal-Proof Outdoor Cameras",
@@ -88,6 +220,56 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Enhanced residential & apartment safety",
       "Remote lock release from smartphone",
     ],
+    subCategories: [
+      {
+        id: "cp-plus-vdp",
+        name: "CP Plus VDP Colour Video Door Camera",
+        image: "/images/services/Video-Door/CP Plus VDP Colour Video Door Camera.png",
+        description: "HD color display video door camera kit with night vision LED support.",
+      },
+      {
+        id: "google-nest-doorbell",
+        name: "Google Nest Doorbell",
+        image: "/images/services/Video-Door/Google Nest Doorbell.png",
+        description: "Smart HD Wi-Fi video doorbell with intelligent package & visitor alerts.",
+      },
+      {
+        id: "hikvision-ds-kis602",
+        name: "Hikvision DS-KIS602 Modular IP Video Intercom Kit",
+        image: "/images/services/Video-Door/Hikvision DS-KIS602 modular IP Video Intercom Kit (Video-Door).png",
+        description: "Modular IP video door phone system with 7-inch indoor touchscreen.",
+      },
+      {
+        id: "panasonic-vl-sa70sx",
+        name: "Panasonic VL-SA70SX Video Door Phone",
+        image: "/images/services/Video-Door/Panasonic VL-SA70SX Video Door Phone .png",
+        description: "7-inch color LCD video intercom system with electric lock release.",
+      },
+      {
+        id: "qubo-smart-wifi-2k",
+        name: "Qubo Smart Wifi Video Doorbell Pro 2K",
+        image: "/images/services/Video-Door/Qubo Smart Wifi Video Doorbell Pro 2k.png",
+        description: "2K ultra-HD smart doorbell with AI person detection and two-way talk.",
+      },
+      {
+        id: "qubo-smart-wifi-pro",
+        name: "Qubo Smart Wifi Video Doorbell Pro",
+        image: "/images/services/Video-Door/Qubo Smart Wifi Video Doorbell Pro.png",
+        description: "Full HD smart video doorbell with cloud storage and instant chime.",
+      },
+      {
+        id: "ring-video-doorbell-pro-2",
+        name: "Ring Video Doorbell Pro 2",
+        image: "/images/services/Video-Door/Ring Video Doorbell  Pro 2.png",
+        description: "3D Motion Detection video doorbell with Head-to-Toe HD video view.",
+      },
+      {
+        id: "wipro-smart-wifi-pro",
+        name: "Wipro Smart Wifi Video Doorbell Pro",
+        image: "/images/services/Video-Door/Wipro Smart Wifi Video Doorbell Pro .png",
+        description: "Smart Wi-Fi video doorbell with night vision and mobile app access.",
+      },
+    ],
   },
   {
     id: "video-conferencing-systems",
@@ -98,7 +280,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDescription:
       "Turnkey conference room AV solutions featuring PTZ cameras, omnidirectional microphone pods, interactive displays, and multi-party conferencing integration.",
     iconName: "Layers",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+    image: "/images/services/Video Conferencing Sys/Logitech Rally Bar Plus System Video Conference.png",
     features: [
       "Ultra-HD 4K PTZ Camera Systems",
       "Beamforming Acoustic Microphones",
@@ -110,6 +292,38 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Crystal clear audio and 4K video clarity",
       "Elimination of executive travel expenses",
     ],
+    subCategories: [
+      {
+        id: "cisco-webex-desk-pro",
+        name: "Cisco Webex Desk Pro Video Conference",
+        image: "/images/services/Video Conferencing Sys/Cisco Webex Desk Pro Video Conference.png",
+        description: "Premium 27-inch 4K touchscreen desktop video conferencing workstation.",
+      },
+      {
+        id: "jabra-panacast-50",
+        name: "Jabra Panacast 50 Huddle Room Kit",
+        image: "/images/services/Video Conferencing Sys/Jabra Panacast 50 huddle Room Kit Video Conferencing Sys.png",
+        description: "180-degree Panoramic 4K Video Bar with intelligent beamforming mic array.",
+      },
+      {
+        id: "logitech-rally-bar-plus",
+        name: "Logitech Rally Bar Plus System Video Conference",
+        image: "/images/services/Video Conferencing Sys/Logitech Rally Bar Plus System Video Conference.png",
+        description: "All-in-one dual-camera video bar system for medium and large conference rooms.",
+      },
+      {
+        id: "poly-studio-x50",
+        name: "Poly Studio X50 All-in-one Video Conference",
+        image: "/images/services/Video Conferencing Sys/Poly Studio X50 All-in-one Video Conference.png",
+        description: "Radically simple video bar supporting native cloud video services.",
+      },
+      {
+        id: "video-conferencing-system-generic",
+        name: "Video Conferencing System Kit",
+        image: "/images/services/Video Conferencing Sys/Video Conferencing System.jpg",
+        description: "Complete boardroom AV setup with PTZ optical zoom camera & expansion mics.",
+      },
+    ],
   },
   {
     id: "boom-barrier-gate",
@@ -120,7 +334,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     fullDescription:
       "High-speed automatic vehicle barriers with RFID long-range tags, Fastag integration, and automatic number plate recognition (ANPR).",
     iconName: "TrendingUp",
-    image: "https://images.unsplash.com/photo-1590402494587-44b71d7772f6?q=80&w=800&auto=format&fit=crop",
+    image: "/images/services/Boom Barrier/Compact Push Button Control Boom Barrier .png",
     features: [
       "High-Speed Motorized Boom Arms (1.5s - 6s)",
       "Long-Range RFID Vehicle Reader",
@@ -131,6 +345,38 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Automated vehicle entry & exit logging",
       "Prevention of unauthorized parking access",
       "Fast traffic throughput during peak hours",
+    ],
+    subCategories: [
+      {
+        id: "compact-push-button-boom-barrier",
+        name: "Compact Push Button Control Boom Barrier",
+        image: "/images/services/Boom Barrier/Compact Push Button Control Boom Barrier .png",
+        description: "Reliable manual and push-button controlled automatic vehicle barrier arm.",
+      },
+      {
+        id: "led-scrolling-boom-barrier",
+        name: "LED Scrolling Boom-Barrier Display",
+        image: "/images/services/Boom Barrier/LED Scrolling Boom-Barrier Display .png",
+        description: "Automated barrier with integrated LED message scrolling display screen.",
+      },
+      {
+        id: "network-control-logging-boom-barrier",
+        name: "Network Control & Logging Boom Barrier",
+        image: "/images/services/Boom Barrier/Network Control & Logging Boom Barrier.png",
+        description: "IP-networked barrier connected to central toll & security management server.",
+      },
+      {
+        id: "solar-powered-boom-barrier",
+        name: "Solar Powered Boom Barrier",
+        image: "/images/services/Boom Barrier/Solar Powered Boom Barrier.png",
+        description: "Eco-friendly solar powered vehicle barrier for remote highways & plazas.",
+      },
+      {
+        id: "updated-display-card-opening-boom-barrier",
+        name: "Updated Display & Card Opening Boom Barrier",
+        image: "/images/services/Boom Barrier/Updated Display & Card Opening Boom Barrier.png",
+        description: "RFID card swipe barrier system with real-time digital status screen.",
+      },
     ],
   },
   {
@@ -197,72 +443,6 @@ export const SERVICES_DATA: ServiceItem[] = [
       "High-visibility visual presentation & branding",
       "Continuous 24/7 operation reliability",
       "Custom screen dimensions and curved displays",
-    ],
-  },
-  {
-    id: "civil-engineering",
-    slug: "civil-engineering",
-    title: "Civil & Structural Engineering",
-    shortDescription:
-      "Structural foundation analysis, concrete framework design, and site preparation for industrial developments.",
-    fullDescription:
-      "Our civil engineering department specializes in structural integrity, foundation design, and site preparation adhering strictly to IS codes.",
-    iconName: "HardHat",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
-    features: [
-      "Structural Foundation Analysis",
-      "Reinforced Concrete & Steel Framework",
-      "Site Grading & Soil Stabilization",
-      "Material Compliance Testing",
-    ],
-    benefits: [
-      "Maximum durability & seismic resilience",
-      "IS code & municipal approval compliance",
-      "Optimized structural material cost efficiency",
-    ],
-  },
-  {
-    id: "3d-modelling",
-    slug: "3d-modelling",
-    title: "3D Modelling & BIM Blueprints",
-    shortDescription:
-      "Advanced 3D structural modeling, Building Information Modeling (BIM), and 2D CAD drafting.",
-    fullDescription:
-      "Spatial 3D BIM models and 2D blueprints that prevent spatial clashes and facilitate seamless execution coordination.",
-    iconName: "FileText",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
-    features: [
-      "3D Architectural & Structural CAD Models",
-      "BIM Clash Detection & Resolution",
-      "Photorealistic Renderings & Walkthroughs",
-      "Municipal Approval Submission Blueprints",
-    ],
-    benefits: [
-      "Early detection of design conflicts",
-      "Accurate material estimation",
-      "Clear visual reference for contractors",
-    ],
-  },
-  {
-    id: "site-supervision",
-    slug: "site-supervision",
-    title: "Site Supervision & Land Survey",
-    shortDescription:
-      "On-site technical oversight, laser land surveys, and contractor execution monitoring.",
-    fullDescription:
-      "Physical site supervision ensuring drawings are implemented flawlessly, materials meet specs, and land contours are verified.",
-    iconName: "ClipboardCheck",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
-    features: [
-      "Daily Construction Supervision",
-      "Quality Control & Rebar Inspections",
-      "Topographical Laser Land Surveys",
-      "Workforce & Subcontractor Coordination",
-    ],
-    benefits: [
-      "Zero compromise on build quality",
-      "Prevention of site errors and rework",
-      "Transparent progress reporting to owners",
     ],
   },
 ];
