@@ -1,22 +1,20 @@
 "use client";
 
 import React, { useCallback } from "react";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
-const BRANDS = [
-  { id: "trueview", name: "Trueview", tag: "True Security Systems" },
-  { id: "honeywell", name: "Honeywell", tag: "Automation & Security" },
-  { id: "zebronics", name: "Zebronics", tag: "Electronics" },
-  { id: "dahua", name: "Dahua", tag: "Technology" },
-  { id: "hikvision", name: "Hikvision", tag: "Digital Surveillance" },
-  { id: "cpplus", name: "CP-PLUS", tag: "Security Solutions" },
-  { id: "essl", name: "eSSL", tag: "Security Beyond" },
-  { id: "matrix", name: "Matrix", tag: "Telecom & Security" },
-  { id: "wd", name: "Western Digital", tag: "Storage" },
-  { id: "seagate", name: "Seagate", tag: "Storage" },
+const BRAND_LOGOS = [
+  { id: "dahua", name: "Dahua", image: "/images/brandslider/adhua.jpeg" },
+  { id: "cpplus", name: "CP-PLUS", image: "/images/brandslider/cpplus.png" },
+  { id: "essl", name: "eSSL", image: "/images/brandslider/essl.jpeg" },
+  { id: "hikvision", name: "Hikvision", image: "/images/brandslider/hikvision.jpeg" },
+  { id: "honeywell", name: "Honeywell", image: "/images/brandslider/honeywell.jpeg" },
+  { id: "matrix", name: "Matrix", image: "/images/brandslider/matrix.jpeg" },
+  { id: "zebronics", name: "Zebronics", image: "/images/brandslider/zebronics.png" },
 ];
 
 export function BrandsSlider() {
@@ -51,19 +49,22 @@ export function BrandsSlider() {
 
           {/* Embla Viewport */}
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex -ml-4">
-              {BRANDS.map((brand) => (
+            <div className="flex -ml-4 items-center">
+              {BRAND_LOGOS.map((brand) => (
                 <div
                   key={brand.id}
                   className="flex-none pl-4 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
                 >
-                  <div className="flex flex-col items-center justify-center p-6 bg-white rounded-2xl border border-gray-200/70 shadow-xs hover:shadow-md hover:border-primary/30 transition-all duration-300 h-28 group cursor-pointer">
-                    <span className="text-lg sm:text-xl font-extrabold font-poppins tracking-wider text-dark group-hover:text-primary transition-colors uppercase text-center">
-                      {brand.name}
-                    </span>
-                    <span className="text-[10px] font-semibold text-gray-400 uppercase tracking-widest mt-1">
-                      {brand.tag}
-                    </span>
+                  <div className="flex items-center justify-center p-4 bg-white rounded-2xl border border-gray-200/60 hover:border-primary/40 shadow-xs hover:shadow-md transition-all duration-300 h-28 group cursor-pointer">
+                    <div className="relative w-full h-20 flex items-center justify-center">
+                      <Image
+                        src={brand.image}
+                        alt={brand.name}
+                        fill
+                        sizes="200px"
+                        className="object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
                   </div>
                 </div>
               ))}

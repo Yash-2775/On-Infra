@@ -1,65 +1,58 @@
 "use client";
 
 import React, { useCallback } from "react";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { ChevronLeft, ChevronRight, Camera, Shield, Cpu, HardDrive, Eye, Fingerprint, DoorOpen, Bell, Monitor } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 const SURVEILLANCE_ITEMS = [
   {
     id: "apartment-solution",
     title: "Apartment Solution",
-    icon: Monitor,
-    color: "text-blue-600 bg-blue-50",
+    image: "/images/surveillance_item/Apartment Solution.png",
   },
   {
     id: "home-automation",
     title: "Home Automation",
-    icon: Cpu,
-    color: "text-indigo-600 bg-indigo-50",
+    image: "/images/surveillance_item/Home Automation.png",
   },
   {
     id: "hd-cctv-camera",
     title: "HD CCTV Camera",
-    icon: Camera,
-    color: "text-emerald-600 bg-emerald-50",
+    image: "/images/surveillance_item/HD CCTV Camera.png",
   },
   {
     id: "hd-dvr",
-    title: "HD DVR & NVR",
-    icon: HardDrive,
-    color: "text-purple-600 bg-purple-50",
+    title: "HD DVR",
+    image: "/images/surveillance_item/HD DVR & NVR.png",
   },
   {
     id: "speed-dome",
-    title: "Speed Dome PTZ",
-    icon: Eye,
-    color: "text-sky-600 bg-sky-50",
+    title: "Speed Dome",
+    image: "/images/surveillance_item/Speed Dome PTZ.png",
   },
   {
     id: "time-attendance",
     title: "Time & Attendance",
-    icon: Fingerprint,
-    color: "text-amber-600 bg-amber-50",
+    image: "/images/surveillance_item/Time & Attendance.png",
   },
   {
     id: "speed-door",
-    title: "Speed Barrier Gate",
-    icon: DoorOpen,
-    color: "text-rose-600 bg-rose-50",
+    title: "Speed Door",
+    image: "/images/surveillance_item/Speed Barrier Gate.png",
   },
   {
     id: "intrusion-alarm",
     title: "Intrusion Alarm",
-    icon: Bell,
-    color: "text-red-600 bg-red-50",
+    image: "/images/surveillance_item/Intrusion Alarm.png",
+    customClass: "translate-y-3 scale-[2.2]", // Shifted down so top is not cut off while staying large!
   },
   {
     id: "smart-security",
     title: "Smart Security",
-    icon: Shield,
-    color: "text-teal-600 bg-teal-50",
+    image: "/images/surveillance_item/Smart Security.png",
   },
 ];
 
@@ -98,27 +91,32 @@ export function SurveillanceSolutionsSlider() {
 
           {/* Embla Viewport */}
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex -ml-4">
-              {SURVEILLANCE_ITEMS.map((item) => {
-                const IconComponent = item.icon;
-                return (
-                  <div
-                    key={item.id}
-                    className="flex-none pl-4 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6"
-                  >
-                    <div className="flex flex-col items-center text-center p-4 bg-white hover:bg-gray-50/80 rounded-2xl border border-gray-100/80 shadow-xs hover:shadow-md transition-all duration-300 group cursor-pointer h-full justify-center">
-                      <div
-                        className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 ${item.color}`}
-                      >
-                        <IconComponent className="w-8 h-8 sm:w-10 sm:h-10" />
-                      </div>
-                      <h3 className="text-xs sm:text-sm font-semibold font-poppins text-dark group-hover:text-primary transition-colors leading-snug">
-                        {item.title}
-                      </h3>
+            <div className="flex -ml-4 items-center">
+              {SURVEILLANCE_ITEMS.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex-none pl-4 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
+                >
+                  <div className="flex flex-col items-center justify-between text-center p-4 bg-white hover:bg-gray-50/80 rounded-3xl border border-gray-200/80 shadow-xs hover:shadow-lg transition-all duration-300 group cursor-pointer h-[240px] sm:h-[270px]">
+                    {/* Large High-Visibility Product Image Area */}
+                    <div className="relative w-full h-36 sm:h-44 overflow-hidden flex items-center justify-center rounded-2xl bg-gray-50/30">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        sizes="300px"
+                        className={`object-contain transform scale-[2.5] sm:scale-[2.9] transition-transform duration-300 group-hover:scale-[3.1] ${
+                          item.customClass || ""
+                        }`}
+                      />
                     </div>
+                    {/* Clear Label below image */}
+                    <h3 className="text-sm sm:text-base font-bold font-poppins text-dark group-hover:text-primary transition-colors leading-snug mt-2 text-center">
+                      {item.title}
+                    </h3>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
 
