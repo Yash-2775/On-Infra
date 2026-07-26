@@ -2,6 +2,7 @@ export interface ClientBrand {
   id: string;
   name: string;
   shortName: string;
+  logoImage?: string;
   highlighted?: boolean;
 }
 
@@ -14,65 +15,137 @@ export interface GalleryProject {
 }
 
 export const CLIENTS_LIST: ClientBrand[] = [
-  { id: "alta-labs", name: "Alta Laboratories Ltd", shortName: "ALTA LABS", highlighted: true },
-  { id: "amns-india", name: "AM/NS India", shortName: "AM/NS INDIA", highlighted: true },
-  { id: "colt-cables", name: "Colt Cables Limited", shortName: "COLT CABLES", highlighted: false },
-  { id: "east-coast", name: "East Coast Constructions Limited", shortName: "EAST COAST CONSTRUCTIONS", highlighted: false },
-  { id: "grindwell-norton", name: "Grindwell - Norton", shortName: "GRINDWELL NORTON", highlighted: false },
-  { id: "hr-johnson", name: "H & R. Johnson (I.) Limited", shortName: "H & R JOHNSON", highlighted: true },
-  { id: "indo-rama", name: "Indo Rama Cements Ltd", shortName: "INDO RAMA CEMENTS", highlighted: false },
-  { id: "ispat-ind", name: "Ispat Industries Limited", shortName: "ISPAT INDUSTRIES", highlighted: false },
-  { id: "jindal-steel", name: "Jindal Stainless Steelway", shortName: "JINDAL STAINLESS", highlighted: true },
-  { id: "khopoli-mc", name: "Khopoli Municipal Council", shortName: "KHOPOLI MUNICIPAL", highlighted: false },
+  {
+    id: "godrej-woods",
+    name: "Godrej Woods Karjat",
+    shortName: "GODREJ WOODS",
+    logoImage: "/images/clients/godrej.jpg",
+    highlighted: true,
+  },
+  {
+    id: "hitech-radiators",
+    name: "Hi-Tech Radiators PVT.LTD",
+    shortName: "HI-TECH RADIATORS",
+    logoImage: "/images/clients/Hi-tech.jpeg",
+    highlighted: true,
+  },
+  {
+    id: "neoliv",
+    name: "Neoliv",
+    shortName: "NEOLIV",
+    logoImage: "/images/clients/neoliv.png",
+    highlighted: true,
+  },
+  {
+    id: "monteria-village",
+    name: "Monteria Village",
+    shortName: "MONTERIA VILLAGE",
+    logoImage: "/images/clients/monteria.png",
+    highlighted: true,
+  },
+  {
+    id: "hilton",
+    name: "Hilton",
+    shortName: "HILTON",
+    logoImage: "/images/clients/Hilton.jpeg",
+    highlighted: true,
+  },
+  {
+    id: "a1-fence",
+    name: "A-1 Fence",
+    shortName: "A-1 FENCE",
+    logoImage: "/images/clients/A-1 Fence.jpeg",
+    highlighted: true,
+  },
+  {
+    id: "cipla",
+    name: "Cipla",
+    shortName: "CIPLA",
+    logoImage: "/images/clients/Cipla.jpeg",
+    highlighted: true,
+  },
+  {
+    id: "dreamstate-llp",
+    name: "DreamStat LLP",
+    shortName: "DREAMSTAT LLP",
+    logoImage: "/images/clients/DreamState LLP.jpeg",
+    highlighted: true,
+  },
+  // { id: "alta-labs", name: "Alta Laboratories Ltd", shortName: "ALTA LABS", highlighted: false },
+  // { id: "amns-india", name: "AM/NS India", shortName: "AM/NS INDIA", highlighted: false },
+  // { id: "colt-cables", name: "Colt Cables Limited", shortName: "COLT CABLES", highlighted: false },
+  // { id: "east-coast", name: "East Coast Constructions Limited", shortName: "EAST COAST CONSTRUCTIONS", highlighted: false },
+  // { id: "grindwell-norton", name: "Grindwell - Norton", shortName: "GRINDWELL NORTON", highlighted: false },
+  // { id: "hr-johnson", name: "H & R. Johnson (I.) Limited", shortName: "H & R JOHNSON", highlighted: false },
+  // { id: "indo-rama", name: "Indo Rama Cements Ltd", shortName: "INDO RAMA CEMENTS", highlighted: false },
+  // { id: "ispat-ind", name: "Ispat Industries Limited", shortName: "ISPAT INDUSTRIES", highlighted: false },
+  // { id: "jindal-steel", name: "Jindal Stainless Steelway", shortName: "JINDAL STAINLESS", highlighted: false },
+  // { id: "khopoli-mc", name: "Khopoli Municipal Council", shortName: "KHOPOLI MUNICIPAL", highlighted: false },
 ];
 
 export const GALLERY_PROJECTS: GalleryProject[] = [
   {
-    id: "proj-1",
-    companyName: "Alta Laboratories Ltd",
-    category: "Civil Engineering & Structural Foundation",
+    id: "proj-godrej",
+    companyName: "Godrej Woods Karjat",
+    category: "Civil Infrastructure & Surveillance System",
     description:
-      "Executed industrial foundation analysis, soil stabilization, and reinforced concrete structure supervision for production facilities.",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop",
+      "Executed comprehensive township civil site supervision, contour land surveys, and 4K perimeter CCTV surveillance installation.",
+    image: "/images/clients/godrej.jpg",
   },
   {
-    id: "proj-2",
-    companyName: "AM/NS India",
-    category: "4K CCTV & Biometric Surveillance",
+    id: "proj-cipla",
+    companyName: "Cipla",
+    category: "Fire Safety & Cleanroom Security",
     description:
-      "Installed multi-channel IP CCTV cameras, ANPR automatic boom barriers, and biometric attendance systems across industrial entry gates.",
-    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=800&auto=format&fit=crop",
+      "Integrated addressable smoke detection fire alarm systems, cleanroom biometric access control, and IP surveillance cameras.",
+    image: "/images/clients/Cipla.jpeg",
   },
   {
-    id: "proj-3",
-    companyName: "Colt Cables Limited",
-    category: "High-Voltage Power Distribution",
+    id: "proj-hilton",
+    companyName: "Hilton",
+    category: "Luxury Intercom & EPABX System",
     description:
-      "Designed and implemented high-voltage substation layouts, industrial cable distribution, and emergency backup grid connections.",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop",
+      "Installed multi-extension IP-PBX intercom calling exchange, video door phone units, and 24/7 security monitoring.",
+    image: "/images/clients/Hilton.jpeg",
   },
   {
-    id: "proj-4",
-    companyName: "Jindal Stainless Steelway",
-    category: "3D BIM Modelling & Blueprints",
+    id: "proj-hitech",
+    companyName: "Hi-Tech Radiators PVT.LTD",
+    category: "Industrial Power Grid & Access Control",
     description:
-      "Delivered photorealistic 3D BIM structural modeling, CAD clash detection, and municipal approval blueprint drafting.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
+      "Engineered high-voltage industrial electrification, transformer load distribution, and ZKTeco biometric attendance terminals.",
+    image: "/images/clients/Hi-tech.jpeg",
   },
   {
-    id: "proj-5",
-    companyName: "East Coast Constructions Limited",
-    category: "Turnkey Site Supervision & Land Survey",
+    id: "proj-neoliv",
+    companyName: "Neoliv",
+    category: "3D BIM Structural Modelling",
     description:
-      "Conducted topographical laser land surveys, contour plotting, and physical site engineering oversight.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop",
+      "Delivered photorealistic 3D BIM structural modeling, CAD clash detection, and municipal sanction blueprint preparation.",
+    image: "/images/clients/neoliv.png",
   },
   {
-    id: "proj-6",
-    companyName: "Khopoli Municipal Council",
-    category: "LED Video Wall & Command Center",
+    id: "proj-monteria",
+    companyName: "Monteria Village",
+    category: "Outdoor LED Videowall & Intrusion Alarm",
     description:
-      "Installed high-brightness outdoor LED video displays and command center AV equipment featuring GreenTech™ energy optimization.",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=800&auto=format&fit=crop",
+      "Installed weather-proof GreenTech™ outdoor LED video display walls and PIR perimeter intrusion beam alarm systems.",
+    image: "/images/clients/monteria.png",
+  },
+  {
+    id: "proj-a1fence",
+    companyName: "A-1 Fence",
+    category: "Automatic Boom Barriers & Gate Automation",
+    description:
+      "Deployed high-speed motorized boom barrier gates with ANPR license plate cameras and long-range RFID readers.",
+    image: "/images/clients/A-1 Fence.jpeg",
+  },
+  {
+    id: "proj-dreamstat",
+    companyName: "DreamStat LLP",
+    category: "Corporate Biometrics & Network Intercom",
+    description:
+      "Configured multi-factor face & fingerprint biometric time attendance systems integrated with corporate payroll software.",
+    image: "/images/clients/DreamState LLP.jpeg",
   },
 ];

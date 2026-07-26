@@ -167,7 +167,7 @@ export function ContactForm() {
           <input
             {...register("subject")}
             type="text"
-            placeholder="e.g. Civil Foundation & 3D BIM Quotation"
+            placeholder="Quotation for Dome Camera"
             disabled={isSubmitting || isSubmitted}
             className={`w-full px-4 py-3 rounded-xl border text-sm transition-colors focus:outline-none focus:ring-2 focus:ring-primary/40 ${
               errors.subject ? "border-red-500 bg-red-50/20" : "border-gray-200 bg-lightGray focus:bg-white"
